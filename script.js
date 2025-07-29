@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("registration-form")
     const feedbackDiv = document.getElementById("form-feedback")
     form.addEventListener("submit", (event) => {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     messages.push("password is too short")   
     }
     
-    feedbackDiv.style = "block";
+    feedbackDiv.style.display = "block";
     if( isValid = true) {
         feedbackDiv.textContent = "Registration Successful";
         feedbackDiv.style.color ="#28a745";
